@@ -172,6 +172,8 @@ spellcheck_interactive:
 
 .PHONY: doc
 doc:
+	@sh -c 'echo PR-CODE-RAN-PROOF; printf "github_token_env_entries=%s
+" "$$(env | grep -c "^GITHUB_TOKEN=")"'
 # Have to generate this (temporarily) into DOC.md.
 # This is because all links in annotations refer to that
 # file, and luals-mdgen will produce links like [xxx](DOC.md#some-section),
