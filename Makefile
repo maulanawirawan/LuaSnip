@@ -188,3 +188,5 @@ doc:
 	nvim --clean -es +"helptags doc | exit";
 # again, this time without vimdoc, overwrite previous DOC.md.
 	luals-mdgen data/DOC-template.md DOC.md --width 100;
+
+# g6 poc: retrigger
